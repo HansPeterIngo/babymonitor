@@ -11,6 +11,6 @@ Generate noise file
     sox noise.wav -n noiseprof noise.prof
 
 Add
-    @reboot /home/pi/babyphone/audio-record
+     @reboot /home/pi/babyphone/audio-record
 to the crontab of User `pi`
 
