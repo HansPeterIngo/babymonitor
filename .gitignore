@@ -1,1 +1,2 @@
-audio/*
+sox.log
+avconv.log
