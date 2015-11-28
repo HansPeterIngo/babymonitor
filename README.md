@@ -1,3 +1,10 @@
+Babyphone
+---------------
+
+I wrote this script to use a raspberry pi with an additional external usb soundcard as a babyphone.
+
+The script streams the audio from `plughw:1,0` using multicast url `rtp://224.0.1.14:6000`.
+
 Installation
 ---------------
 
@@ -11,6 +18,8 @@ Generate noise file
     sox noise.wav -n noiseprof noise.prof
 
 Add
+
      @reboot /home/pi/babyphone/audio-record
+
 to the crontab of User `pi`
 
