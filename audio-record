@@ -1,6 +1,6 @@
 #!/bin/bash
 
 cd /home/pi/babyphone
-/home/pi/babyphone/keepalive.sh "sox --buffer 4048 -t alsa plughw:1,0 -t wav - noisered noise.prof lowpass 3.0k highpass 600 compand .05,10 -inf,-80.1,-inf,-80,-60,-40,-20,-30,-10,0,0 0 -90 .1 2>/home/pi/babyphone/audio/sox | avconv -v debug -i - -acodec mp2 -ac 1 -ab 128k -f rtp rtp://224.0.1.14:6000 1>/home/pi/babyphone/audio/avconv 2>&1" &
+/home/pi/babyphone/keepalive.sh "sox --buffer 4048 -t alsa plughw:1,0 -t wav - noisered noise.prof lowpass 3.0k highpass 600 compand .05,10 -inf,-80.1,-inf,-80,-60,-40,-20,-30,-10,0,0 0 -90 .1 2>/home/pi/babyphone/sox.log | avconv -v debug -i - -acodec mp2 -ac 1 -ab 128k -f rtp rtp://224.0.1.14:6000 1>/home/pi/babyphone/avconv.log 2>&1" &
 
 
