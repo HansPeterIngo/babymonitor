@@ -3,7 +3,7 @@ Baby monitor
 
 This scripts helps you to turn your raspberry pi (or any other linux PC) with an additional external soundcard and microphone into a baby monitor. 
 
-There are two different scripts which are used to stream the audio from the alsa port `plughw:1,0` using the rtp protocol to the multicast url `rtp://224.0.1.14:6000`.
+There are two different scripts which are used to stream the audio from the ALSA port `plughw:1,0` using the rtp protocol to the multicast url `rtp://224.0.1.14:6000`.
 
 To reduce the amount of noise recorded the script includes the usage of a noise profile, lowpass filter, highpass filter and noise gate / compressor. 
 
