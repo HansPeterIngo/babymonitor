@@ -13,7 +13,7 @@ Installation
 Checkout the repository
     
     cd ~
-    git clone https://github.com/HansPeterIngo/babyphone.git
+    git clone https://github.com/HansPeterIngo/babymonitor.git
     cd babyphone
 
 To use the babyphone you need to install the following packages:
