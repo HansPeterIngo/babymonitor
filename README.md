@@ -1,7 +1,7 @@
 Babyphone
 ---------------
 
-I wrote this script to use a raspberry pi with an additional external usb soundcard as a baby monitor babyphone.
+I wrote this script to use a raspberry pi with an additional external usb soundcard as a baby monitor / phone.
 
 The script streams the audio from `plughw:1,0` using multicast url `rtp://224.0.1.14:6000`.
 
